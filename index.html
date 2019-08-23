@@ -128,8 +128,8 @@ Landsat image time series.</p>
 <p>Java 1.8+ (OpenJDK 8 or higher)</p>
 <p>Tomcat 8.0+ </p>
 <p>Apache Maven 3.5+ (optional for building from source)</p>
-<p><img alt="Docker" src="https://docs.docker.com/install/" /> 18.09.1+ (for install via docker)</p>
-<p><img alt="Docker-compose" src="https://docs.docker.com/compose/install/" /> 1.23.1+ (for install via docker)</p>
+<p><img alt="Docker" src="https:/.docker.com/install/" /> 18.09.1+ (for install via docker)</p>
+<p><img alt="Docker-compose" src="https:/.docker.com/compose/install/" /> 1.23.1+ (for install via docker)</p>
 <h2 id="quick-install">Quick Install</h2>
 <h3 id="linux">Linux</h3>
 <p>This way works for most linux releases, e.g., Ubuntu, CentOS, RedHat, OpenBSD, etc.</p>
@@ -230,7 +230,7 @@ wget https://github.com/ESIPFed/Geoweaver/releases/download/v0.7.0/Geoweaver-0.7
 
 <p>Replace the <code>your-ip</code>, <code>your-port</code> with the real domain of your tomcat. For example, <code>localhost:8080</code>.</p>
 <p>Notice: Make sure the local services like mysql and tomcat are shut down before starting <code>docker-compose</code>. Otherwise there might be port conflict error on <code>3306</code> and <code>8080</code>. Or you can change the port to some other free ports in the docker-compose.yml.</p>
-<p>If you don't have docker or docker-compose installed, these documents will help. <a href="https://docs.docker.com/install">docker</a> <a href="https://docs.docker.com/compose/install/">docker-compose</a></p>
+<p>If you don't have docker or docker-compose installed, these documents will help. <a href="https:/.docker.com/install">docker</a> <a href="https:/.docker.com/compose/install/">docker-compose</a></p>
 <h4 id="shutdown">Shutdown</h4>
 <p>To stop Geoweaver, type:</p>
 <pre><code class="shell">docker stop $(docker ps -aq)
@@ -288,10 +288,10 @@ nano /usr/local/tomcat/webapps/Geoweaver/WEB-INF/classes/cc_secret.properties
 <h1 id="demo">Demo</h1>
 <p>A live demo site is available in George Mason University: <a href="http://129.174.131.229/Geoweaver">I am a link, hit me</a>.</p>
 <p>Here is a use case of Geoweaver, using deep neural network like LSTM RNN and SegNet to classify landsat images into agricultural land use maps. In this case, Geoweaver can help stakeholders get crop maps with better accuracy and high temporal resolution by providing a deep-learning-powered and distributed workflow system. </p>
-<p><img alt="Result Demo" src="demo.png" /></p>
-<p><img alt="LSTM-Crop concept" src="lstm.png" /></p>
+<p><img alt="Result Demo" src="/demo.png" /></p>
+<p><img alt="LSTM-Crop concept" src="/lstm.png" /></p>
 <p>Animation demo:</p>
-<p><img alt="AnimationDemo" src="geoweaver-demo.gif" /></p>
+<p><img alt="AnimationDemo" src="/geoweaver-demo.gif" /></p>
 <h1 id="usage">Usage</h1>
 <h2 id="add-a-server">Add A Server</h2>
 <p>Enroll a server to Geoweaver is simple. The server must have SSH server installed and enabled. The server must be accessible from Geoweaver host server. </p>
@@ -414,5 +414,5 @@ nano /usr/local/tomcat/webapps/Geoweaver/WEB-INF/classes/cc_secret.properties
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-08-23 16:05:08
+Build Date UTC : 2019-08-23 16:07:04
 -->
