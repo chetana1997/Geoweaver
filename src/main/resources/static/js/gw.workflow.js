@@ -913,7 +913,7 @@ GW.workflow = {
 		
 	},
 
-	
+	// the execute request is being sent from here
 	
 	execute_callback: function(req, dialogItself, button){
 

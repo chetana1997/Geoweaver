@@ -359,11 +359,40 @@ GW.workspace = {
         	    	GW.workflow.newDialog(true);
         	    	
     	    	}else{
-    	    		
+    	    		// code to hide the 'execute button' and make the 'stop button' visible
     	    		GW.workflow.run(GW.workflow.loaded_workflow);
+					document.getElementById('execute-workflow').style.visibility = 'hidden';
+					document.getElementById('stop-workflow').style.visibility = 'visible';
     	    		
     	    	}
-    	    	
+
+				//new changes to toggle the stop and pause button in the same position
+				
+				//  document.getElementById('execute-workflow').style.visibility = 'hidden';
+    	    	//  document.getElementById('stop-workflow').style.visibility = 'visible';
+
+				// console.log(document.getElementById('execute-workflow').classList);
+				// document.getElementById('execute-workflow').classList = [];
+				// document.getElementById('execute-workflow').classList = ['btn fa fa-stop fa-2x'];
+				// document.getElementById('execute-workflow').title = 'stop workflow';
+				// document.getElementById('execute-workflow').id = 'stop-workflow';
+    	    });
+
+			// stop button code snippet
+			d3.select("#stop-workflow").on("click", function(){
+				// code to hide the 'stop button' and make the 'execute button' visible
+    	    	GW.workflow.stop(GW.workflow.history_id);
+				document.getElementById('execute-workflow').style.visibility = 'visible';
+    	    	document.getElementById('stop-workflow').style.visibility = 'hidden';
+
+				// new changes to toggle the stop and pause button in the same position
+
+				// document.getElementById('stop-workflow').classList = [];
+				// document.getElementById('stop-workflow').classList = ['btn fa fa-play fa-2x'];
+				// document.getElementById('stop-workflow').title = 'execute workflow';
+				// document.getElementById('stop-workflow').id = 'execute-workflow';
+    	    	// new changes end
+
     	    });
     	    
     	    d3.select("#geoweaver-result").on("click", function(){
