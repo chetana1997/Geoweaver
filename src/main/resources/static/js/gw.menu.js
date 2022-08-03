@@ -20,6 +20,10 @@ GW.menu = {
 			}
 			
 			$('[data-toggle="tooltip"]').tooltip();
+
+			$(".closemainmenubtn").click(GW.process.closeNav)
+
+			$(".openmainmenubtn").click(GW.process.openNav);
 			
 		},
 
