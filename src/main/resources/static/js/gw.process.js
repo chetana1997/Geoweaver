@@ -732,6 +732,43 @@ GW.process = {
 			
 		},
 
+		openNav: function() {
+			// document.getElementById("mySidenav").style.width = "250px";
+			// document.getElementById("main").style.marginLeft = "250px";
+
+			// document.getElementById("sidemenu").style.width = "250px";
+			// document.getElementById("main").style.marginLeft = "250px";
+			
+			var x = document.getElementById("sidemenu_new");
+			var y = document.getElementById("navbar");
+				if (x.style.display === "none") {
+				  x.style.display = "block";
+				  y.style.display = "none";
+				} else {
+				  x.style.display = "none";
+				  y.style.display = "block";
+				}
+		},
+		
+		
+		closeNav: function() {
+			// document.getElementById("mySidenav").style.width = "0";
+			// document.getElementById("main").style.marginLeft = "0";
+
+			//document.getElementById("sidemenu").style.width = "0";
+			// document.getElementById("main").style.marginLeft = "0";
+
+			var x = document.getElementById("sidemenu_new");
+			var y = document.getElementById("navbar");
+				if (x.style.display === "none") {
+				  x.style.display = "block";
+				  y.style.display = "none";
+				} else {
+				  x.style.display = "none";
+				  y.style.display = "block";
+				}
+		},
+
 		newDialog: function(category){
 			
 			var content = '<div class="modal-body">'+
